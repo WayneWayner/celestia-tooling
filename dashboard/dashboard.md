@@ -83,4 +83,4 @@ scrape_configs:
 - Click on save public dashboard
 - Replace localhost in your copied url with your public ip or domain
 
-##6 Done
+##6. Done
