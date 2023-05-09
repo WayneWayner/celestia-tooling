@@ -54,7 +54,33 @@ scrape_configs:
 ```
 
 ##5. Setup Grafana
-Log in to your Grafana dashboard. If you use the default port **3000** you can open it in your firewall and login via **http://<yourNodeIP>:3000**
+- Log in to your Grafana dashboard. If you use the default port **3000** you can open it in your firewall and login via **http://<yourNodeIP>:3000**
 **user:admin pw:admin** is the default login which you should change to something more secure.
 
-tbc...
+**Setup datasource**
+- Navigate to http://<yourNodeIP>:3000
+- Click this the gear icon to edit the configuration.
+- Click on data sources
+- Click Add new data source
+- Choose Prometheus
+- Enter URL (Default:http://localhost:9090)
+- Hit save & test
+
+**Import dashboard**
+- Click the dashboard button (4 squares)
+- Click on import
+- Copy the content of celestia_dashboard.json into **Import via panel json**
+- Hit load
+
+
+##5. Make dashboard public
+
+- Open the imported dashboard
+- Click on the share button
+- Choose Public dashboard
+- Check at least "Enabled" in the Public dashboard configuration
+- Copy the URL 
+- Click on save public dashboard
+- Replace localhost in your copied url with your public ip or domain
+
+##6 Done
