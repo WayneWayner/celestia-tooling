@@ -26,7 +26,7 @@ Install crosscompiler
 ## build: Build celestia-node binary.
 build:
 	@echo "--> Building Celestia"
-	@GOOS=linux GOARCH=arm64 go build -o build/ ${LDFLAGS} ./cmd/celestia
+	@GOOS=linux GOARCH=arm go build -o build/ ${LDFLAGS} ./cmd/celestia
 .PHONY: build
 ```
 
@@ -38,7 +38,7 @@ build:
 Semantic version: v0.9.3-dev
 Commit: 7f556f06e175267e0dd60b444a68554f592710a0
 Build Date: Mo 8. Mai 23:45:52 CEST 2023
-System version: arm64/linux
+System version: arm/linux
 Golang version: go1.20.4
 ```
 
