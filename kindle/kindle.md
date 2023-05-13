@@ -42,6 +42,13 @@ System version: arm/linux
 Golang version: go1.20.4
 ```
 
-copy to kindle
+##copy to kindle
 
-todo...
+Option A: 
+Use transfer.sh 
+
+Option B: 
+Connect to your PC and copy the binary
+
+Search binary on kindle
+
