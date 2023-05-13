@@ -1,19 +1,19 @@
-#Description
+# Description
 
 How to install a grafana dashboard for a celestia consensus node using prometheus and open it to the public.
 
-#Requirements
+# Requirements
 
 - Celestia consensus node
 - Grafana
 - Prometheus
 
-#Steps
+# Steps
 
-##1. Install Prometheus & Grafana
+## 1. Install Prometheus & Grafana
 There are tons of guides out there. Please use one of them to install Prometheus and Grafana.
 
-##2. Tendermint Prometheus endpoint
+## 2. Tendermint Prometheus endpoint
 Make sure your Prometheus endpoint is enabled. 
 
 Open your config.toml (usually located at **.celestia-app/config/config.toml**) and ensure that prometheus is enabled and note the port of your prometheus endpoint.
@@ -26,7 +26,7 @@ prometheus = true
 prometheus_listen_addr = ":26660"
 ```
 
-##3. Enable public dashboards feature of Grafana
+## 3. Enable public dashboards feature of Grafana
 Open your **grafana.ini** and append the following to the end. This will allow you to share a dashboard with view only access with everyone.
 
 ```
@@ -34,7 +34,7 @@ Open your **grafana.ini** and append the following to the end. This will allow y
 publicDashboards = true
 ```
 
-##4. Setup Prometheus scraper
+## 4. Setup Prometheus scraper
 
 Add the celestia scrape job to your **prometheus.yml**
 
@@ -57,7 +57,7 @@ scrape_configs:
           instance: validator    
 ```
 
-##5. Setup Grafana
+## 5. Setup Grafana
 - Log in to your Grafana dashboard. If you use the default port **3000** you can open it in your firewall and login via **http://<yourNodeIP>:3000**
 **user:admin pw:admin** is the default login which you should change to something more secure.
 
@@ -77,7 +77,7 @@ scrape_configs:
 - Hit load
 
 
-##5. Make dashboard public
+## 6. Make dashboard public
 
 - Open the imported dashboard
 - Click on the share button
@@ -87,4 +87,4 @@ scrape_configs:
 - Click on save public dashboard
 - Replace localhost in your copied url with your public ip or domain
 
-##6. Done
+## 7. Done
