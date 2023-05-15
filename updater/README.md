@@ -39,7 +39,7 @@ tmux ls
 tmux a -t 0 
 ```
 
-|  Parameter | Desccription  
+|  Parameter | Description  
 |---|---|
 |  -t | Target block to perform the update  |
 |  -b | Binary name  |
