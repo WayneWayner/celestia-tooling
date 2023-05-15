@@ -28,7 +28,15 @@ chmod+x updateBin.sh
 # Run the updater
 
 ```
-sudo bash updateBin.sh -t $TARGET_BLOCK -b celestia-appd -s celestia-appd.service -u /home/celestia/celestia-app/build/celestia-appd  -i /home/celestia/go/bin/celestia-appd
+#Run with tmux to not kill the process and loose the session when closing the window.
+tmux
+sudo bash updateBin.sh -t 123456789 -b celestia-appd -s celestia-appd.service -u /home/celestia/celestia-app/build/celestia-appd  -i /home/celestia/go/bin/celestia-appd
+
+# Press **CRTL+B** and then **D** to detach from the session
+# List sessions
+tmux ls
+# Open session 0
+tmux a -t 0 
 ```
 
 |  Parameter | Desccription  
