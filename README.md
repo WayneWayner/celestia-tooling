@@ -1,12 +1,12 @@
 # Celestia Tooling
 
-In this repository are some guides for node operators which I used and created during the Celestia Incentivized Testnet blockspacerace-0
+In this repository are some guides and tools I used and created during the Celestia incentivized testnet blockspacerace-0
 
 
 
 ## [Celestia snapshot service](/snapshot/README.md)
 ![Snapshots](/snapshot/Celestia_snaphots.png)
-A tool create and provide consensus node snapshots to the community
+A tool to create and provide consensus node snapshots to the community using a http server
 
 ## [Public validator dashboard](/dashboard/README.md)
 ![Dashboard](/dashboard/dashboard.png)
