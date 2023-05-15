@@ -1,25 +1,27 @@
 # Running Celestia on a jailbroken Kindle Paperwhite 2021
 
-Will it work?
+# Description
+How to run a celestia light node on a Kindle Paperwhite 2021
 
+Medium article: todo
 
-Notes Kindle Celestia:
+Notes:
 
+- Read the medium article
 - Better don't use the prebuild alpine as it's too old and the apk package won't work.
 - Build it yourself or use mine
-- not enough space to build
-- create a alpine env with 10GB disk
-- build there copy the binary.
-- create smaller alpine image. 
-- copy binary on it
+- Kindle don't have enough storage to build the app itself
+- Build it on a beefier machine like your PC via a cross compiler
+- Copy the binary to your kindle
 
-Cross compile:
+# Cross compile
 
 
 
 Install crosscompiler
 `sudo apt-get install gcc-arm-linux-gnueabi`
 
+Edit makefile
 `nano Makefile`
 
 ```
@@ -29,9 +31,10 @@ build:
 	@GOOS=linux GOARCH=arm go build -o build/ ${LDFLAGS} ./cmd/celestia
 .PHONY: build
 ```
-
+Build 
 `make build`
 
+Check if it build successfully 
 `build/celestia version`
 
 ```
@@ -42,12 +45,12 @@ System version: arm/linux
 Golang version: go1.20.4
 ```
 
-##copy to kindle
+# Copy to kindle
 
-Option A: 
-Use transfer.sh 
+## Option A: 
+Use transfer.sh (recommended)
 
-Option B: 
+## Option B: 
 Connect to your PC and copy the binary
 
 Search binary on kindle
