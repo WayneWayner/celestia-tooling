@@ -74,7 +74,7 @@ scrape_configs:
 **Import dashboard**
 - Click the dashboard button (4 squares)
 - Click on import
-- Copy the content of celestia_dashboard.json (Based on https://grafana.com/grafana/dashboards/11036-cosmos-blockchains/) into **Import via panel json**
+- Copy the content of [celestia_dashboard.json](celestia_dashboard.json) (Based on https://grafana.com/grafana/dashboards/11036-cosmos-blockchains/) into **Import via panel json**
 - Hit load
 
 
