@@ -1,3 +1,4 @@
+![Dashboard](dashboard.png)
 # Description
 
 How to install a grafana dashboard for a celestia consensus node using prometheus and open it to the public.

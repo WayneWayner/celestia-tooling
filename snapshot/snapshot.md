@@ -1,3 +1,4 @@
+![Snapshot](Celestia_snaphots.png)
 # Description
 
 A tool to create snapshots of the Celestia consensus node.
