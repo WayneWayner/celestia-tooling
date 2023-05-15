@@ -62,7 +62,7 @@ scrape_configs:
 **user:admin pw:admin** is the default login which you should change to something more secure.
 
 **Setup datasource**
-- Navigate to http://<yourNodeIP>:3000
+- Navigate to http://\<yourNodeIP>:3000
 - Click this the gear icon to edit the configuration.
 - Click on data sources
 - Click Add new data source
