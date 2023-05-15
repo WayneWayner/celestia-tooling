@@ -4,7 +4,7 @@
 # Description
 How to run a celestia light node on a Kindle Paperwhite 2021
 
-Medium article: todo
+Medium article: [LINK](https://medium.com/@waynewayner/how-light-is-your-light-node-running-celestia-on-an-ebook-reader-f6ca96691489)
 
 Notes:
 
@@ -16,7 +16,6 @@ Notes:
 - Copy the binary to your kindle
 
 # Cross compile
-
 
 
 Install crosscompiler
