@@ -1,15 +1,15 @@
-#Description
+# Description
 
 A tool to create snapshots of the Celestia consensus node.
 
-#Requirements
+# Requirements
 
 - Celestia consensus node (Do **NOT** use a validator) [Link](https://docs.celestia.org/nodes/consensus-full-node/#setting-up-a-consensus-full-node)
 - Domain (optional but recommended)
 
 # Steps
 
-##1. Consensus node
+## 1. Consensus node
 
 Install your consensus node and decide whether you want to have pruning and transaction indexing enabled (you need to resync if you want to change this later). In this tutorial we want to use an archive node with transaction indexing. Therefore we change the following in **~/.celestia-app/config/config.toml**
 
@@ -49,7 +49,7 @@ pruning-interval = "0"
 
 ```
 
-##2. Install webserver
+## 2. Install webserver
 
 For this guide [Miniserve](https://github.com/svenstaro/miniserve) will be used as webserver to host the snapshot files.
 
@@ -97,7 +97,7 @@ For this guide [Miniserve](https://github.com/svenstaro/miniserve) will be used 
   ```
 
 
-##3. Snapshot script
+## 3. Snapshot script
 
 - Download and review the **celestiaSnap.sh** script.
 - Edit the following variables inside the script according to your environment 
@@ -123,4 +123,4 @@ For this guide [Miniserve](https://github.com/svenstaro/miniserve) will be used 
   ```
 - The script will now run each day at 00:00.
 
-##4. Done
+## 4. Done
